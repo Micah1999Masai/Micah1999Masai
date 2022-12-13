@@ -4,4 +4,4 @@ opencv-python-headless
 pandas
 scikit-learn
 sklearn
-PyQt4
+PyQt5
