@@ -5,3 +5,4 @@ pandas
 scikit-learn
 sklearn
 PyQt5
+streamlit
