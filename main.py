@@ -32,6 +32,7 @@ for j in range(img.shape[1]):
 	R = img[i][j][2]	
 	if (B > 110 and G > 110 and R > 110):
 			p += 1	
+
 		
 	
 			
