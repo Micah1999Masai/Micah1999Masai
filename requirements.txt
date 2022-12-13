@@ -7,4 +7,3 @@ sklearn
 PyQt5
 streamlit
 opencv-python
-cv2
