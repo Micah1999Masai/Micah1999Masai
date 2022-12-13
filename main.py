@@ -16,7 +16,7 @@ if file_uploaded is not None :
 	#img = image.open(file_uploaded)
 	text = str(file_uploaded)		
 	img = cv2.imread(text)
-	print ("\n*********************\nImage : " + ImageFile + "\n*********************")
+	print ("\n*********************\nImage : " + file_uploaded + "\n*********************")
 
 	
 
