@@ -11,11 +11,19 @@ def endprogram():
 
 #Reading the image by parsing the argument 
 
-text = str(ImageFile)
-print ("\n*********************\nImage : " + ImageFile + "\n*********************")
-img = cv2.imread(text)
 
-img = cv2.resize(img ,((int)(img.shape[1]/5),(int)(img.shape[0]/5)))
+def main() :
+    file_uploaded = st.file_uploader('Choose an image...', type = 'jpg')
+    if file_uploaded is not None :
+        img = Image.open(file_uploaded)
+        st.write("Uploaded Image.")
+        figure = plt.figure()
+        plt.imshow(img)
+        plt.axis('off')
+        st.pyplot(figure)
+#img = cv2.imread(text)
+
+#img = cv2.resize(img ,((int)(img.shape[1]/5),(int)(img.shape[0]/5)))
 original = img.copy()
 neworiginal = img.copy() 
 cv2.imshow('original',img)
