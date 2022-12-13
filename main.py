@@ -15,13 +15,14 @@ def endprogram():
 def main() :
     file_uploaded = st.file_uploader('Choose an image...', type = 'jpg')
     if file_uploaded is not None :
-img = Image.open(file_uploaded)
+		img = Image.open(file_uploaded)
 text = str(img)
 original = img.copy()
 img = cv2.imread(text)
 img = cv2.resize(img ,((int)(img.shape[1]/5),(int)(img.shape[0]/5)))
 neworiginal = img.copy()
-cv2.imshow('original',img)	
+cv2.imshow('original',img)
+	
 #Calculating number of pixels with shade of white(p) to check if exclusion of these pixels is required or not (if more than a fixed %) in order to differentiate the white background or white patches in image caused by flash, if present.
 p = 0 
 for i in range(img.shape[0]):
