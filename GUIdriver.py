@@ -1,5 +1,5 @@
 import sys
-from PyQt5 import QtCore, QtGui, uic
+from PyQt5 import QtCore, QtGui,QtWidgets, uic
  
 qtCreatorFile = "design.ui" # Enter file here.
 global ImageFile
