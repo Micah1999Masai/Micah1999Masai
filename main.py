@@ -27,12 +27,11 @@ if file_uploaded is not None :
 #for i in range(img.shape[0]):	
 if file_uploaded is not None:
 	for j in range(img.shape[1]):
-	B = img[i][j][0]
-	G = img[i][j][1]
-	R = img[i][j][2]	
-	if (B > 110 and G > 110 and R > 110):
+		B = img[i][j][0]
+		G = img[i][j][1]
+		R = img[i][j][2]
+		if (B > 110 and G > 110 and R > 110):
 			p += 1
-	
 			
 #finding the % of pixels in shade of white
 totalpixels = img.shape[0]*img.shape[1]
