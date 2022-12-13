@@ -4,6 +4,6 @@ opencv-python-headless
 pandas
 scikit-learn
 sklearn
-PyQt5
+PyQt4
 streamlit
 opencv-python
