@@ -24,9 +24,9 @@ def main() :
 #img = cv2.imread(text)
 
 #img = cv2.resize(img ,((int)(img.shape[1]/5),(int)(img.shape[0]/5)))
-original = img.copy()
-neworiginal = img.copy() 
-cv2.imshow('original',img)
+#original = img.copy()
+#neworiginal = img.copy() 
+#cv2.imshow('original',img)
 
 
 #Calculating number of pixels with shade of white(p) to check if exclusion of these pixels is required or not (if more than a fixed %) in order to differentiate the white background or white patches in image caused by flash, if present.
