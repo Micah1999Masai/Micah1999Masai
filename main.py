@@ -20,16 +20,18 @@ if file_uploaded is not None :
 	img = cv2.resize(img ,((int)(img.shape[1]/5),(int)(img.shape[0]/5)))
 	neworiginal = img.copy()
 	cv2.imshow('original',img)
- 
-#Calculating number of pixels with shade of white(p) to check if exclusion of these pixels is required or not (if more than a fixed %) in order to differentiate the white background or white patches in image caused by flash, if present.
-p = 0 
-for i in range(img.shape[0]):
+	p = 0 
+	for i in range(img.shape[0]):
 	for j in range(img.shape[1]):
 		B = img[i][j][0]
 		G = img[i][j][1]
 		R = img[i][j][2]
 		if (B > 110 and G > 110 and R > 110):
 			p += 1
+ 
+#Calculating number of pixels with shade of white(p) to check if exclusion of these pixels is required or not (if more than a fixed %) in order to differentiate the white background or white patches in image caused by flash, if present.
+
+
 			
 #finding the % of pixels in shade of white
 totalpixels = img.shape[0]*img.shape[1]
