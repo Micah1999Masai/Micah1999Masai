@@ -21,11 +21,13 @@ def main() :
         plt.imshow(img)
         plt.axis('off')
         st.pyplot(figure)
+text = str(ImageFile)
+original = img.copy()
 img = cv2.imread(text)
 img = cv2.resize(img ,((int)(img.shape[1]/5),(int)(img.shape[0]/5)))
-original = img.copy()
 neworiginal = img.copy() 
 cv2.imshow('original',img)
+
 
 
 
