@@ -1,5 +1,6 @@
 import cv2
 import streamlit as st
+from PIL import Image
 import numpy as np           
 import argparse, sys, os
 #from GUIdriver import *
@@ -13,7 +14,7 @@ def endprogram():
 #Reading the image by parsing the argument 
 file_uploaded = st.file_uploader('Choose an image...', type = 'jpg')
 if file_uploaded is not None :
-	img = image.open(file_uploaded)
+	img = Image.open(file_uploaded)
 	text = str(file_uploaded)		
 	img = cv2.imread(text)
 	#print ("\n*********************\nImage : " + file_uploaded + "\n*********************")
