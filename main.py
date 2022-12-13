@@ -24,8 +24,9 @@ if file_uploaded is not None :
 	#p = 0
 	
 #Calculating number of pixels with shade of white(p) to check if exclusion of these pixels is required or not (if more than a fixed %) in order to differentiate the white background or white patches in image caused by flash, if present.
-#for i in range(img.shape[0]):	
+	
 if file_uploaded is not None:
+	for i in range(img.shape[0]):
 	for j in range(img.shape[1]):
 		B = img[i][j][0]
 		G = img[i][j][1]
